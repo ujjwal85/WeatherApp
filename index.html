@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>WeatherApp</title>
+</head>
+<body>
+   <from class="search-form">
+    <input type="search" placeholder="Enter City Name" id="search-input" autocomplete="off" required >
+    <button id="search-button">Search</button>
+   </from>
+
+   <main id="app-container">
+    <div id="location">
+        <p>...</p>
+    </div>
+    <div id="temp">
+        <div id="temp-icon">
+            
+        </div>
+        <!-- <img src = "./icons/cloudy.png" alt="" id="temp-icon"> -->
+        <p><span id="temp-value">.......</span> <span id="temp-unit">&#176C</span></p>
+    </div>
+    <div id="climate">
+        <p>------</p>
+        
+    </div>
+
+   </main>
+   <script src="weather.js"></script>
+   </body>
+</html>
